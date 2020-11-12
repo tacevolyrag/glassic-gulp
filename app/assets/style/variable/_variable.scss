@@ -1,0 +1,26 @@
+$primary-color: #AA0601;
+$secondary-color: #650300;
+$light-bg-color: #AA06010D;
+$white-color: #fff;
+.h1{
+    font-size: 72px;
+}
+.h2{
+    font-size: 64px;
+}
+.h3{
+    font-size: 48px;
+}
+.h4{
+  font-size: 36px;
+}
+.h5{
+  font-size: 24px;
+}
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+}
+// rwd 
+$table-media: 1130px;
+$phone-media: 767px;
