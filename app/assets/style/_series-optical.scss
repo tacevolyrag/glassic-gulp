@@ -35,6 +35,7 @@
 	display: flex;
 	img{
 		width: calc(100% / 2 - 15px);
+		max-height: 305px;
 		&:nth-child(1){
 			margin-right: 30px;
 		}
@@ -131,7 +132,17 @@
 		li{
 			a{
 				font-size: 28px;
-				padding: 16px 0 8px 0;
+				padding: 16px 0;
+
+			}
+			img{
+				height: 32px;
+				width: 32px;
+			}
+			&:nth-child(1){
+				a{
+					padding: 16px 0 8px 0;
+				}
 			}
 		}
 	}
@@ -144,7 +155,7 @@
 		}
 	}
 	.product{
-		// margin-right: 40px;
+		margin-top: 40px;
 		h1{
 			font-size: 32px;
 		}

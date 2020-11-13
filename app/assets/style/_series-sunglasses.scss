@@ -1,0 +1,147 @@
+.sunglasses-product{
+	margin-top: 88px;
+	margin-bottom: 200px;
+	h1,h2{
+		text-align: center;
+	}
+	h1{
+		font-size: 42px;
+	}
+	h2{
+		font-size: 32px;
+	}
+	ul{
+		margin-top: 40px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	li{
+		width: 31%;
+		margin: 0 15px 104px 15px;
+		&:nth-child(3n + 3){
+			margin-right: 0;
+		}
+		&:nth-child(3n + 1){
+			margin-left: 0;
+		}
+	}
+	img{
+		width: 100%;
+	}
+	p,span{
+		font-size: 18px;
+	}
+	p{
+		margin-bottom: 8px;
+	}
+	span{
+		display: block;
+		color: $primary-color;
+		margin-bottom: 11px;
+	}
+	.color{
+		display: inline-block;
+		width: 19px;
+		height: 19px;
+		background-color: #5F3E2D;
+		border-radius: 4px;
+		margin-right: 8px;
+		+.color{
+			background-color: #B75929;
+		}
+	}
+}
+.sunglasses-nav{
+	display: none;
+}
+// rwd
+@media screen and (min-width: $table-media){
+	.glass__series {
+		li{
+			&:nth-child(2){
+				a{
+					padding: 24px 0 8px 0;
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: $phone-media) and (max-width: $table-media){
+	.glass__series {
+		li{
+			&:nth-child(2){
+				a{
+					padding: 16px 0 8px 0;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $table-media){
+	.sunglasses-product{
+		margin-top: 40px;
+		padding: 0 39px;
+		margin-bottom: 0;
+		ul{
+			margin-top: 32px;
+		}
+		li{
+			width: 47%;
+			margin: 0 0 72px 0;
+			&:nth-child(odd){
+				margin-right: 30px;
+			}
+		}
+		p,span{
+			font-size: 24px;
+		}
+		p{
+			float: left;
+		}
+		span{
+			text-align: right;
+		}
+		.color{
+			width: 24px;
+			height: 24px;
+		}
+	}
+	.sunglasses-nav{
+		display: block;
+	}
+}
+@media screen and (max-width: $phone-media){
+	.glass__series{
+		li{
+			&:nth-child(2){
+				a{
+					padding: 8px 0 4px 0;
+				}
+			}
+		}
+	}
+	.sunglasses-product{
+		padding: 0 15px;
+		margin-top: 30px;
+		h1{
+			font-size: 20px;
+		}
+		h2{
+			font-size: 16px;
+		}
+		li{
+			margin: 0 0 32px 0;
+			width: 100%;
+			&:nth-child(odd){
+				margin-right: 0;
+			}
+		}
+		p,span{
+			font-size: 16px;
+		}
+		.color{
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
