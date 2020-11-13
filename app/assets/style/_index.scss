@@ -46,6 +46,11 @@
   .classic{
     display: flex;
     margin-bottom: 32px;
+    .classic__image{
+      img{
+        object-fit: cover;
+      }
+    }
     .classic__title{
       display: flex;
       align-items: center;
@@ -326,6 +331,12 @@
       }
       label{
         font-size: 14px;
+      }
+      .contact__imformation{
+        div{
+          padding-left: 24px;
+          text-indent: -24px;
+        }
       }
     }
   }
