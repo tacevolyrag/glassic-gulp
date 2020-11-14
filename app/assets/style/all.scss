@@ -1,9 +1,14 @@
-@import 'layout/reset';
 @import 'variable/variable';
+@import 'layout/reset';
 @import 'layout/navbar';
 @import 'layout/footer';
+@import 'utilities/pagination';
+@import 'utilities/breadcrumb';
+@import 'utilities/navbarNews';
 @import 'index';
 @import 'series-optical';
 @import 'series-sunglasses';
 @import 'location';
-
+@import 'qa';
+@import 'blog';
+@import 'blog-valentines';

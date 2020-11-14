@@ -1,0 +1,192 @@
+.special{
+  h5{
+		display: inline-block;
+		margin-right: 16px;
+		a{
+			text-decoration: none;
+			color: $primary-color;
+		}
+  }
+}
+.speical-valentines{
+	display: flex;
+}
+.speical__content{
+	h1{
+		margin-bottom: 5px;
+	}
+	h2{
+		font-size: 28px;
+		display: inline-block;
+		margin-bottom: 23px;
+	}
+	span{
+		float: right;
+		color: #6C6C6C;
+	}
+	li{
+		margin-bottom: 36px;
+		img{
+			margin-bottom: 24px;
+			width: 100%;
+		}
+		p{
+			font-size: 20px;
+			color: #555555;
+			line-height: 30px;
+			font-weight: bold;
+		}
+	}
+	.share{
+		font-weight: bold;
+		font-size: 20px;
+		p{
+			display: inline-block;
+		}
+		img{
+			margin: 0 8px;
+			vertical-align: middle;
+		}
+	}
+}
+.speical__footer{
+	border-top: 1px solid #707070;
+	margin-top: 16px;
+	margin-bottom: 304px;
+	padding-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	img{
+		vertical-align: baseline;
+	}
+	a{
+		text-decoration: none;
+	}
+	p{
+		color: #000;
+		display: inline-block;
+	}
+}
+.speical__tags{
+	margin-left: 31px;
+	img{
+		vertical-align: middle;
+	}
+	h3{
+		font-size: 28px;
+		color: $primary-color;
+		display: inline-block;
+	}
+	h5{
+		display: inline-block;
+		margin-right: 24px;
+	}
+}
+
+// rwd
+
+@media screen and (max-width: $table-media){
+	.special{
+		padding-left: 39px;
+		padding-right: 39px;
+		h5{
+			font-size: 16px;
+		}
+	}
+	.speical__content{
+		h1{
+			font-size: 32px;
+		}
+		h2{
+			font-size: 16px;
+			margin-bottom: 16px;
+		}
+		span{
+			font-size: 14px;
+		}
+		li{
+			margin-bottom: 24px;
+			p{
+				font-size: 16px;
+			}
+		}
+		.share{
+			padding-top: 3px;
+			font-size: 16px;
+			img{
+				width: 20px;
+			}
+		}
+	}
+	.speical__footer{
+		width: 133%;
+		padding-top: 16px;
+		margin-bottom: 104px;
+		img{
+			width: 20px;
+		}
+	}
+	.speical__tags{
+		img{
+			width: 24px;
+			height: 24px;
+			vertical-align: bottom;
+		}
+		h3{
+			font-size: 20px;
+		}
+		h5{
+			margin-top: 6px;
+		}
+	}
+}
+@media screen and (max-width: $phone-media){
+	.special{
+		padding: 0 15px;
+		h5{
+			font-size: 14px;
+			margin-right: 4px;
+		}
+		h1{
+			font-size: 20px;
+			color: $primary-color;
+		}
+		h2{
+			font-size: 14px;
+			margin-bottom: 19px;
+		}
+	}
+	.speical-valentines{
+		flex-direction: column;
+	}
+	.speical__content{
+		li{
+			img{
+				margin-bottom: 16px;
+			}
+		}
+	}
+	.speical__footer{
+		width: auto;
+		margin-bottom: 31px;
+		padding-top: 8px;
+		flex-direction: column;
+		a{
+			margin-bottom: 8px;
+			&:nth-child(2){
+				img{
+					float: left;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	.speical__tags{
+		margin-left: 0;
+		margin-bottom: 56px;
+		margin-right: 50px;
+		h5{
+			font-size: 16px;
+		}
+	}
+}
