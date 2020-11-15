@@ -209,6 +209,9 @@
 	}
 }
 @media screen and (max-width: $phone-media){
+	.location-banner{
+		height: 143px;
+	}
 	.location__content{
 		h1{
 			font-size: 28px;

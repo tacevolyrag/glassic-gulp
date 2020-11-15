@@ -1,5 +1,5 @@
 .news{
-  background-color: #650300;
+  background-color: $secondary-color;
 }
 .navbarNews{
     display: flex;
@@ -9,21 +9,27 @@
     }
     li{
       margin-right: 48px;
+      a{
+        text-decoration: none;
+        color: $white-color;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 12px 0 14px;
+        display: block;
+        transition: .2s all;
+        &:hover{
+          color: $primary-color;
+          background-color: #fff;
+          font-weight: bold;
+        }
+      }
       &:last-child{
         margin-right: 0;
       }
-      a{
-              text-decoration: none;
-              color: $white-color;
-              font-weight: bold;
-              font-size: 20px;
-              padding: 12px 0 14px;
-              display: block;
-      }
-      }
-      .search{
-          padding: 12px 0 14px;
-      }
+    }
+    .search{
+        padding: 12px 0 14px;
+    }
   }
 
   // rwd
@@ -44,9 +50,20 @@
 }
 @media screen and (max-width: $phone-media){
 	.navbarNews{
-		display: none;
+    display: none;
+    padding: 0 15px;
+    margin-top: 0;
   }
   .navbarNews-open{
-    display: block; 
+    display: block;
+    .search{
+      display: none;
+    }
+    ul{
+      justify-content: space-between;
+    }
+    li{
+      margin-right: 0;
+    }
   }
 }
