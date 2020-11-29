@@ -77,9 +77,15 @@
 		color: $primary-color;
 		display: inline-block;
 	}
-	h5{
+	li{
 		display: inline-block;
 		margin-right: 24px;
+		a{
+			text-decoration: none;
+			color: $primary-color;
+			font-weight: bold;
+			font-size: 24px;
+		}
 	}
 }
 
@@ -135,7 +141,7 @@
 		h3{
 			font-size: 20px;
 		}
-		h5{
+		li{
 			margin-top: 6px;
 		}
 	}
@@ -185,8 +191,10 @@
 		margin-left: 0;
 		margin-bottom: 56px;
 		margin-right: 50px;
-		h5{
-			font-size: 16px;
+		li{
+			a{
+				font-size: 16px;
+			}
 		}
 	}
 }
